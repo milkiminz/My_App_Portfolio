@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="milki.almanac.myappportfolio.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="My App Portfolio!"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textSize="23dp"
+                android:textColor="#4e1259" />
+
+            <Button
+                android:text="SPOTIFY STREAMER"
+                android:id="@+id/spotifystreamer"
+                style="@style/button"
+                android:layout_below="@+id/textView"
+                android:onClick="clickspotify" />
+
+            <Button
+                android:text="SCORES APP"
+                android:id="@+id/scoresapp"
+                style="@style/button"
+                android:layout_below="@+id/spotifystreamer"
+                android:onClick="clickscores" />
+
+            <Button
+                android:text="BUILD IT BIGGER"
+                android:id="@+id/builditbigger"
+                style="@style/button"
+                android:layout_below="@+id/libraryapp"
+                android:onClick="clickbuilditbetter" />
+
+            <Button
+                android:text="LIBRARY APP"
+                android:id="@+id/libraryapp"
+                style="@style/button"
+                android:layout_below="@+id/scoresapp"
+                android:onClick="clicklibrary" />
+
+            <Button
+                android:text="BACON READER"
+                android:id="@+id/baconreader"
+                style="@style/button"
+                android:layout_below="@+id/builditbigger"
+                android:onClick="clickbaconreader" />
+
+            <Button
+                android:text="CAPSTONE:MY OWN APP"
+                android:id="@+id/capstone"
+                style="@style/button"
+                android:layout_below="@+id/baconreader"
+                android:background="#7621aa"
+                android:onClick="clickcapstone" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
